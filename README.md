@@ -1,4 +1,5 @@
 # doggie
+<<<<<<< HEAD
 
 > 杨旺旺的探索
 
@@ -28,3 +29,6 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+vue+element
+>>>>>>> db50809989533a761c25372e1cc0eb8b984390bd
