@@ -2,8 +2,10 @@
 
 import axios from "axios";
 
+const BaseURL = "http://dearsan.top/doggie/";
+
 //基础配置
-axios.defaults.baseURL = "https://dearsan.top/doggie/";
+axios.defaults.baseURL = BaseURL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.headers.post["X-Requested-With"] = "XMLHttpRequest";
 axios.defaults.timeout = 10000;
@@ -62,12 +64,12 @@ function checkStatus(response) {
     }
   });
 }
-  
+
 export default {
     post(action, params) {
       return axios({
         method: "post",
-        requestURL(action),
+        url: requestURL(action),
         data: params
       }).then(response => {
         return checkStatus(response);
@@ -77,11 +79,10 @@ export default {
       params = qs.stringify(params);
       return axios({
         method: "get",
-        requestURL(action),
-        params
+        url: requestURL(action),
+        data: params
       }).then(response => {
         return checkStatus(response);
       });
     }
 }
-
