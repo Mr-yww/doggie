@@ -1,0 +1,40 @@
+/*flex排列布局*/
+.spaceBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceAround {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceLeft {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceRight {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flexStart {
+	display: flex;
+	align-items: flex-start !important;
+}

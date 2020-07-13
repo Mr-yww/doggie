@@ -2,7 +2,8 @@
 
 import axios from "axios";
 
-const BaseURL = "http://dearsan.top/doggie/";
+// const BaseURL = "http://dearsan.top/doggie/";
+const BaseURL = "http://39.99.129.48:80/doggie/";
 
 //基础配置
 axios.defaults.baseURL = BaseURL;
